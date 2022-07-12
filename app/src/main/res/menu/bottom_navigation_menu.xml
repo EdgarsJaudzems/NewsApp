@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_fragment"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:title="@string/menu_title_apple"/>
+    <item
+        android:id="@+id/web_view_fragment"
+        android:icon="@drawable/ic_web"
+        android:enabled="true"
+        android:title="@string/menu_title_web_view"/>
+
+</menu>

@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Main -->
+    <string name="app_name">NewsApp</string>
+
+    <!-- Menu Titles -->
+    <string name="menu_title_apple">Apple News</string>
+    <string name="menu_title_web_view">Website</string>
+
+    <!-- Fragment Titles -->
+    <string name="fragment_title_apple">Apple News</string>
+    <string name="fragment_title_apple_details">Details</string>
+    <string name="fragment_title_web_view">WebView</string>
+
+    <!-- Detail Fragment -->
+    <string name="detail_fragment_article_title">This is a custom title</string>
+    <string name="detail_fragment_article_description">This is a custom description of new article from news api org</string>
+    <string name="detail_fragment_article_source">Source</string>
+    <string name="detail_fragment_article_date">2022–06–30</string>
+    <string name="detail_fragment_article_button">Full Article</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

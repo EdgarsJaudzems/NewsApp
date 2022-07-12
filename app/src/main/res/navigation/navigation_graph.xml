@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.edgars.newsapp.ui.mainfragment.MainFragment"
+        android:label="@string/fragment_title_apple"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_detailsFragment"
+            app:destination="@id/details_fragment">
+            <argument
+                android:name="title"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="Title" />
+            <argument
+                android:name="image_url"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="" />
+            <argument
+                android:name="description"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="Description" />
+            <argument
+                android:name="source"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="Source" />
+            <argument
+                android:name="date"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="Date" />
+            <argument
+                android:name="url"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="URL" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/details_fragment"
+        android:name="com.edgars.newsapp.ui.detailsfragment.DetailsFragment"
+        android:label="@string/fragment_title_apple_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_details_fragment_to_detailsWebViewFragment"
+            app:destination="@id/detailsWebViewFragment">
+            <argument
+                android:name="url"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="URL" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/web_view_fragment"
+        android:name="com.edgars.newsapp.ui.webview.WebViewFragment"
+        android:label="@string/fragment_title_web_view"
+        tools:layout="@layout/fragment_web_view">
+    </fragment>
+    <fragment
+        android:id="@+id/detailsWebViewFragment"
+        android:name="com.edgars.newsapp.ui.detailsfragment.DetailsWebViewFragment"
+        android:label="@string/fragment_title_web_view"
+        tools:layout="@layout/fragment_details_web_view" />
+</navigation>
